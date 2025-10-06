@@ -7,7 +7,7 @@ nav_order: 1
 
 # Selection Tab
 {: .no_toc }
-The Selection tab is where you'll select the sheets and views to be exported and the file naming rules. ProSheets has options to sort, filter, and search to ease the selection. Plus, it has an advanced naming rule builder that allows you to customize the filenames.
+The Selection tab is where you'll select the sheets and views to be exported and the file naming rules. DiRootsMEP has options to sort, filter, and search to ease the selection. Plus, it has an advanced naming rule builder that allows you to customize the filenames.
 ## Table of contents
 {: .no_toc .text-delta }
 
@@ -31,13 +31,13 @@ The 'Views' radio button will show the existing views in the project.
 
 2. Use the checkboxes to select specific sheets/views or use the checkbox in the table header to select all sheets/views.
 
-![ProSheets Selecting Revit Sheets and Views](../../assets\images\GIFs\Selection\PS-RadioButton.gif)  
-<sub>Note: the version on the image may not reflect the [latest version of ProSheets](https://diroots.com/revit-plugins/revit-to-pdf-dwg-dgn-dwf-nwc-ifc-and-images-with-prosheets/).</sub>
+![DiRootsMEP Selecting Revit Sheets and Views](../../assets\images\GIFs\Selection\PS-RadioButton.gif)  
+<sub>Note: the version on the image may not reflect the [latest version of DiRootsMEP](https://diroots.com/revit-plugins/revit-to-pdf-dwg-dgn-dwf-nwc-ifc-and-images-with-dirootsmep/).</sub>
 
 3. Select the "Opened Sheets/Views Only" option to filter only the list of open sheets and views.
 
-![ProSheets Opened Sheets/Views only](../../assets\images\GIFs\Selection\PS-OpenedSheets.gif)  
-<sub>Note: the version on the image may not reflect the [latest version of ProSheets](https://diroots.com/revit-plugins/revit-to-pdf-dwg-dgn-dwf-nwc-ifc-and-images-with-prosheets/).</sub>
+![DiRootsMEP Opened Sheets/Views only](../../assets\images\GIFs\Selection\PS-OpenedSheets.gif)  
+<sub>Note: the version on the image may not reflect the [latest version of DiRootsMEP](https://diroots.com/revit-plugins/revit-to-pdf-dwg-dgn-dwf-nwc-ifc-and-images-with-dirootsmep/).</sub>
 
 ---
 
@@ -45,8 +45,8 @@ The 'Views' radio button will show the existing views in the project.
 
 Right-click on the table header to select any other instance parameter available on your sheets. Examples - Current Review Date, Approved By, Appears on Sheet List, etc. 
 
-![ProSheets Sorting Revit Sheets and Views and right-click](../../assets\images\GIFs\Selection\PS-RightClick.gif)  
-<sub>Note: the version on the image may not reflect the [latest version of ProSheets](https://diroots.com/revit-plugins/revit-to-pdf-dwg-dgn-dwf-nwc-ifc-and-images-with-prosheets/).</sub>
+![DiRootsMEP Sorting Revit Sheets and Views and right-click](../../assets\images\GIFs\Selection\PS-RightClick.gif)  
+<sub>Note: the version on the image may not reflect the [latest version of DiRootsMEP](https://diroots.com/revit-plugins/revit-to-pdf-dwg-dgn-dwf-nwc-ifc-and-images-with-dirootsmep/).</sub>
 
 
 ### Filter
@@ -55,13 +55,13 @@ Filtering options available:
 
 1. Dropdown to filter by view type (e.g., 3D, Floor Plan, Section, Detail, etc.).
 
-![ProSheets Filter by View Type](../../assets\images\GIFs\Selection\PS-FilterViewTypes.gif)  
-<sub>Note: the version on the image may not reflect the [latest version of ProSheets](https://diroots.com/revit-plugins/revit-to-pdf-dwg-dgn-dwf-nwc-ifc-and-images-with-prosheets/).</sub>
+![DiRootsMEP Filter by View Type](../../assets\images\GIFs\Selection\PS-FilterViewTypes.gif)  
+<sub>Note: the version on the image may not reflect the [latest version of DiRootsMEP](https://diroots.com/revit-plugins/revit-to-pdf-dwg-dgn-dwf-nwc-ifc-and-images-with-dirootsmep/).</sub>
 
 2.  Select several sheets/views and save new sets for filtering.
 
-![ProSheets Save Sets](../../assets\images\GIFs\Selection\PS-Sets.gif)  
-<sub>Note: the version on the image may not reflect the [latest version of ProSheets](https://diroots.com/revit-plugins/revit-to-pdf-dwg-dgn-dwf-nwc-ifc-and-images-with-prosheets/).</sub>
+![DiRootsMEP Save Sets](../../assets\images\GIFs\Selection\PS-Sets.gif)  
+<sub>Note: the version on the image may not reflect the [latest version of DiRootsMEP](https://diroots.com/revit-plugins/revit-to-pdf-dwg-dgn-dwf-nwc-ifc-and-images-with-dirootsmep/).</sub>
 
 ### Search
 
@@ -86,8 +86,8 @@ For example, you can find Views by:
 - Discipline
 - Custom filename
 
-![ProSheets Searching for Revit Sheets and Views](../../assets\images\GIFs\Selection\PS-Search.gif)  
-<sub>Note: the version on the image may not reflect the [latest version of ProSheets](https://diroots.com/revit-plugins/revit-to-pdf-dwg-dgn-dwf-nwc-ifc-and-images-with-prosheets/).</sub>
+![DiRootsMEP Searching for Revit Sheets and Views](../../assets\images\GIFs\Selection\PS-Search.gif)  
+<sub>Note: the version on the image may not reflect the [latest version of DiRootsMEP](https://diroots.com/revit-plugins/revit-to-pdf-dwg-dgn-dwf-nwc-ifc-and-images-with-dirootsmep/).</sub>
 
 ---
 
@@ -102,8 +102,8 @@ Main features:
 - Other non-Revit parameters (e.g., Current Month, Day, Hour, etc.)
 - Custom Name Preview
 
-![ProSheets building a custom filename with Revit parameters and custom parameters](../../assets\images\PS-CustomFileNameSelection.gif)  
-<sub>Note: the version on the image may not reflect the [latest version of ProSheets](https://diroots.com/revit-plugins/revit-to-pdf-dwg-dgn-dwf-nwc-ifc-and-images-with-prosheets/).</sub>
+![DiRootsMEP building a custom filename with Revit parameters and custom parameters](../../assets\images\PS-CustomFileNameSelection.gif)  
+<sub>Note: the version on the image may not reflect the [latest version of DiRootsMEP](https://diroots.com/revit-plugins/revit-to-pdf-dwg-dgn-dwf-nwc-ifc-and-images-with-dirootsmep/).</sub>
 
 ---
 
@@ -137,8 +137,8 @@ Set some advanced settings as defaults for your prints, using the radio button t
 - Turn off the Reveal Constraints mode before printing
 - Leave the Reveal Constrains mode on and print
 
-![ProSheets Advanced Settings](../../assets\images\GIFs\Selection\PS-AdvancedSettings.gif)  
-<sub>Note: the version on the image may not reflect the [latest version of ProSheets](https://diroots.com/revit-plugins/revit-to-pdf-dwg-dgn-dwf-nwc-ifc-and-images-with-prosheets/).</sub>
+![DiRootsMEP Advanced Settings](../../assets\images\GIFs\Selection\PS-AdvancedSettings.gif)  
+<sub>Note: the version on the image may not reflect the [latest version of DiRootsMEP](https://diroots.com/revit-plugins/revit-to-pdf-dwg-dgn-dwf-nwc-ifc-and-images-with-dirootsmep/).</sub>
 
 ---
 
