@@ -8,17 +8,18 @@ permalink: /
 
 # DiRootsMEP | Autodesk Revit Plugin.
 
-![DiRootsMEP Logo](/assets/images/DiRootsMEP-Icon-150x150-1.png)
+![DiRootsMEP Logo](./assets/images/DiRootsMEP Logo Black 150x150.png)
 
-DiRootsMEP is an Autodesk Revit Add-in to export Views and Sheets to PDF, DWG, DGN, DWF, NWC, IFC, IMG (JPEG, PNG, TIFF), Families and Other Styles.
+**DiRootsMEP** is an Autodesk Revit Add-in developed to enhance productivity and accuracy in MEP modeling workflows.  
+It provides a growing suite of smart tools designed to automate repetitive tasks, improve model consistency, and simplify MEP project management.
 
-## Core Features
+## Current Tools
 
-- Batch Export Sheets/Views to PDF, DWG, DGN, DWF, NWC, IFC, and IMG (JPEG, PNG, TIFF), Families and Other Styles.
-- Auto dectection of paper size and orientation (based on the Title Block family Sheet Width and Height)
-- Custom Parametric Filename (e.g., Sheet Name + Sheet Number + Revision Number). Plus: custom parameters and separators
-- Save the export settings to Profiles
-- Import Profiles from a any location (e.g., shared folder, network location, etc.)
-- Schedule prints with date/time and repeat frequency to be made automatically
+- **Insulation Tool** – for efficient insulation management across MEP systems.  
+- **System Validation Tool** – for identifying and maintaining consistent MEP system definitions.
 
-[Download](https://diroots.com/revit-plugins/revit-to-pdf-dwg-dgn-dwf-nwc-ifc-and-images-with-dirootsmep/){: .btn .btn-di-orange }
+## More to Come
+
+DiRoots MEP is continuously evolving. Additional tools and features will be introduced in upcoming releases, expanding its capabilities to cover more MEP automation and quality control workflows within Revit.
+
+[Download](https://github.com/DiRoots-Limited/DiRootsMEP.Releases/releases/latest/){: .btn .btn-di-orange }
