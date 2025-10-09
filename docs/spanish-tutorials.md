@@ -8,11 +8,3 @@ nav_order: 3
 # DiRootsMEP tutorials and demo videos in Spanish.
 If you have created content about DiRootsMEP and you want to see it featured here, drop us an email at info@diroots.com
 {: .no_toc }
-
-<div class="di-iframe-container">
-  <iframe
-  title="Diroots DiRootsMEP - Revit to PDF"
-  class="di-responsive-iframe" 
-  src="https://www.youtube.com/embed/ScEFDmdYgS4?feature=oembed">
-  </iframe>
-</div> 

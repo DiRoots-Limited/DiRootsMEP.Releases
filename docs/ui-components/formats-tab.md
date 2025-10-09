@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Formats Tab
+title: System Validation
 parent: User Guide
 nav_order: 2
 ---
 
-# Formats Tab
+# System Validation
 {: .no_toc }
 
 ## Table of contents
@@ -16,102 +16,9 @@ nav_order: 2
 
 ---
 
-## Supported File Formats
+## Undefined System Type
 
-DiRootsMEP allows you to batch Export Sheets/Views to PDF, DWG, DGN, DWF, NWC, IFC, IMG (JPEG, PNG, TIFF) and XML
+This tool identifies and highlights pipes and ducts that have an undefined system type within the active view. It helps ensure all elements are properly categorized, maintaining MEP system consistency and accuracy.
 
-![DiRootsMEP Selecting File Formats to export](../../assets\images\GIFs\FileFormats\PS-SelectFormat.gif)  
-<sub>Note: the version on the image may not reflect the [latest version of DiRootsMEP](https://diroots.com/revit-plugins/revit-to-pdf-dwg-dgn-dwf-nwc-ifc-and-images-with-dirootsmep/).</sub>
-
-## PDF Settings
-
-DiRootsMEP uses the Revit engine and a custom instance of PDF24 printer (diroots.dirootsmep printer) to export to PDF. DiRootsMEP supports all Revit to PDF options plus some additional handy features.
-
-Supported settings:
-
-- **All PDF Revit settings**
-    - Paper Size: set the paper size in the "Create" tab.
-    - Paper Placement: choose to locate the print in the "Center" or assign an X and Y value to the "Offset from Corner".
-    - Zoom: choose the zoom for printing by selecting "Fit to page" or by setting a % value for "Zoom".
-    - Printer: choose the printer you want, either the "PDF24" used as standard by DiRootsMEP or "Revit Native" (premium feature).
-    - Orientation: set the orientation in the "Create" tab.
-    - Hidden Line Views: use the radio button to remove lines using "Vector processing" or "Raster processing".
-    - Options: use the checkbox to select some of the general settings you want.
-    - File: choose between printing each sheet/view separately or combining them into a single file. For the option to combine into a single file, set this as well:
-      - Custom File Name
-      - Order Sheets and Views
-      - Select the checkbox for "Keep Paper Size & Orientation" of the current selection
-	
-	![DiRootsMEP Additional PDF Settings](../../assets\images\PS-PDFSettings.gif)  
-
-## DWG Settings
-
-DiRootsMEP uses the Revit engine to export to DWG. All the DWG settings will be read from the DWG export setups created in Revit.
-
-Steps:
-1. In Revit UI go to File -> Export -> DWG and create a new DWG/DXF export setup as per your requirements (if you don't know how to create/modify a DWG/DXF setup, read this [article](https://knowledge.autodesk.com/support/revit/learn-explore/caas/CloudHelp/cloudhelp/2019/ENU/Revit-DocumentPresent/files/GUID-E8443B4B-D55B-4630-BEE3-D2D8628CA17B-htm.html))
-
-2. Use the dropdown to switch between the existing DWG setups. If you created the setup with DiRootsMEP opened, you may need to close and reopen it to see the new setup in the list.
-
-```yaml
-# Note:
-To Create an "Export Group" go to "DWG Export" and select "Modify Export Setup" on the "Select Export Setup" group box.
-```
-
-3. Select the checkbox to "Export views on sheets and links as external references".
-
-4. Use the checkbox to "Bind Images as OLE in DWG File" (premium feature).
-
-```yaml
-# Note:
-This feature requires AutoCAD 2019 or higher, to work.
-```
-
-![DiRootsMEP Revit DWG Export Settings](../../assets\images\GIFs\FileFormats\PS-DWG-GeneralSettings.gif)  
-<sub>Note: the version on the image may not reflect the [latest version of DiRootsMEP](https://diroots.com/revit-plugins/revit-to-pdf-dwg-dgn-dwf-nwc-ifc-and-images-with-dirootsmep/).</sub>
-
-## DGN Settings
-
-DiRootsMEP uses the Revit engine to export to DGN. All the DGN settings will be read from the DGN export setups created in Revit.
-
-Steps:
-1. In Revit UI go to File -> Export -> DGN and create a new DGN export setup as per your requirements (if you don't know how to create/modify a DGN setup, read this [article](https://knowledge.autodesk.com/support/revit/learn-explore/caas/CloudHelp/cloudhelp/2021/ENU/Revit-DocumentPresent/files/GUID-253B99CA-09C0-456E-B260-E69F5C14F793-htm.html))
-2. Use the dropdown to switch between the existing DGN setups. If you created the setup with DiRootsMEP opened, you may need to close and reopen it to see the new setup in the list.  
-
-![DiRootsMEP Revit DGN Export Settings](../../assets/images/GIFs/FileFormats/DWG-export-settings.gif)  
-<sub>Note: the version on the image may not reflect the [latest version of DiRootsMEP](https://diroots.com/revit-plugins/revit-to-pdf-dwg-dgn-dwf-nwc-ifc-and-images-with-dirootsmep/).</sub>
-
-## DWF Settings
-
-DiRootsMEP uses the Revit engine to export to DWF/DWFx. DiRootsMEP supports and exposes in its UI all Revit to DWF/DWFx export options.
-
-![DiRootsMEP Revit DWF/DWFx Settings](../../assets/images/PS-DWF-DWFx-settings.png)  
-<sub>Note: the version on the image may not reflect the [latest version of DiRootsMEP](https://diroots.com/revit-plugins/revit-to-pdf-dwg-dgn-dwf-nwc-ifc-and-images-with-dirootsmep/).</sub>
-## NWC Settings
-
-DiRootsMEP uses the Autodesk Navisworks NWC Export Utility to export to NWC. You must install the [Autodesk Navisworks NWC Export Utility](https://www.autodesk.com/products/navisworks/3d-viewers) (if it's not yet installed).
-
-![DiRootsMEP Revit NWC Settings](../../assets/images/PS-NWC-settings.png)  
-<sub>Note: the version on the image may not reflect the [latest version of DiRootsMEP](https://diroots.com/revit-plugins/revit-to-pdf-dwg-dgn-dwf-nwc-ifc-and-images-with-dirootsmep/).</sub>
-## IFC Settings
-
-DiRootsMEP uses the Revit engine to export to IFC. DiRootsMEP supports and exposes in its UI all Revit to IFC export options.
-
-![DiRootsMEP Revit IFC Settings](../../assets/images/PS-IFC-settings.png)  
-<sub>Note: the version on the image may not reflect the [latest version of DiRootsMEP](https://diroots.com/revit-plugins/revit-to-pdf-dwg-dgn-dwf-nwc-ifc-and-images-with-dirootsmep/).</sub>
-## Images and HTML Settings
-
-DiRootsMEP uses the Revit engine to export to Images and HTML. DiRootsMEP supports and exposes in its UI all Revit to Images and HTML export options.
-
-![DiRootsMEP Revit Images and HTML Settings](../../assets/images/PS-Images-HTML-settings.png)  
-<sub>Note: the version on the image may not reflect the [latest version of DiRootsMEP](https://diroots.com/revit-plugins/revit-to-pdf-dwg-dgn-dwf-nwc-ifc-and-images-with-dirootsmep/).</sub>
-
-## XML Settings
-
-DiRootsMEP uses the selected Sheets and Views parameters to build an XML document or fragment. It also supports Project Information parameters, environment variables (such as Date and Time), and custom Elements. A default XML element name is created from the parameter name, but it can be overridden.
-![DiRootsMEP XML Settings](../../assets/images/PS-XML-settings.png)  
-<sub>Note: the version on the image may not reflect the [latest version of DiRootsMEP](https://diroots.com/revit-plugins/revit-to-pdf-dwg-dgn-dwf-nwc-ifc-and-images-with-dirootsmep/).</sub>
-
----
-
-Let's move on to the next step. After defining the formats you want, click on "Next" to go to the create settings.
+![DiRootsMEP System Validation - Undefined System Type](../../assets\images\GIFs\SystemValidation\DMEP_Insulation-Tools-System-Validation-Undefined-system-types.gif)  
+<sub>Note: the version on the image may not reflect the [latest version of DiRootsMEP](https://diroots.com/revit-plugins/dirootsmep/).</sub>

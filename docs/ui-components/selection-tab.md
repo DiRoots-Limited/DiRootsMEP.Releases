@@ -1,13 +1,13 @@
 ---
 layout: default
-title: Selection Tab
+title: Insulation Tools
 parent: User Guide
 nav_order: 1
 ---
 
-# Selection Tab
+# Insulation Tools
 {: .no_toc }
-The Selection tab is where you'll select the sheets and views to be exported and the file naming rules. DiRootsMEP has options to sort, filter, and search to ease the selection. Plus, it has an advanced naming rule builder that allows you to customize the filenames.
+The insulation tools helps users to easily manage, review and apply insulation for pipes and ducts.
 ## Table of contents
 {: .no_toc .text-delta }
 
@@ -16,130 +16,71 @@ The Selection tab is where you'll select the sheets and views to be exported and
 
 ---
 
-## Select Sheets and Views or View/Sheet Sets
+## Add Insulation
 
-The first step is to select the sheets and views to be exported.  
-
-Steps:
-
-1. Click radio buttons to switch between sheets and views. fsdfsdfs
-
-```yaml
-The 'Sheets' radio button will show the existing sheets in the project.  
-The 'Views' radio button will show the existing views in the project.  
-```
-
-2. Use the checkboxes to select specific sheets/views or use the checkbox in the table header to select all sheets/views.
-
-![DiRootsMEP Selecting Revit Sheets and Views](../../assets\images\GIFs\Selection\PS-RadioButton.gif)  
-<sub>Note: the version on the image may not reflect the [latest version of DiRootsMEP](https://diroots.com/revit-plugins/revit-to-pdf-dwg-dgn-dwf-nwc-ifc-and-images-with-dirootsmep/).</sub>
-
-3. Select the "Opened Sheets/Views Only" option to filter only the list of open sheets and views.
-
-![DiRootsMEP Opened Sheets/Views only](../../assets\images\GIFs\Selection\PS-OpenedSheets.gif)  
-<sub>Note: the version on the image may not reflect the [latest version of DiRootsMEP](https://diroots.com/revit-plugins/revit-to-pdf-dwg-dgn-dwf-nwc-ifc-and-images-with-dirootsmep/).</sub>
-
----
-
-### Add Parameters columns
-
-Right-click on the table header to select any other instance parameter available on your sheets. Examples - Current Review Date, Approved By, Appears on Sheet List, etc. 
-
-![DiRootsMEP Sorting Revit Sheets and Views and right-click](../../assets\images\GIFs\Selection\PS-RightClick.gif)  
-<sub>Note: the version on the image may not reflect the [latest version of DiRootsMEP](https://diroots.com/revit-plugins/revit-to-pdf-dwg-dgn-dwf-nwc-ifc-and-images-with-dirootsmep/).</sub>
+This feature allows users to automatically apply insulation to pipes and ducts based on predefined rules such as size, workset, and comments. 
 
 
-### Filter
+### Interface Overview
+
+The tool contains two main tabs — Pipes and Ducts, allowing users specify which elements to apply insulation to.
+
+### Selection Scope
 
 Filtering options available:
 
-1. Dropdown to filter by view type (e.g., 3D, Floor Plan, Section, Detail, etc.).
+Before creating rules, choose the scope of selection
+1. Whole Model – Applies the rule to all relevant elements in the model.
+2. Active View – Applies the rule to elements visible in the current view.
+3. Current Selection – Applies the rule only to currently selected elements.
 
-![DiRootsMEP Filter by View Type](../../assets\images\GIFs\Selection\PS-FilterViewTypes.gif)  
-<sub>Note: the version on the image may not reflect the [latest version of DiRootsMEP](https://diroots.com/revit-plugins/revit-to-pdf-dwg-dgn-dwf-nwc-ifc-and-images-with-dirootsmep/).</sub>
 
-2.  Select several sheets/views and save new sets for filtering.
+### Add Rules
 
-![DiRootsMEP Save Sets](../../assets\images\GIFs\Selection\PS-Sets.gif)  
-<sub>Note: the version on the image may not reflect the [latest version of DiRootsMEP](https://diroots.com/revit-plugins/revit-to-pdf-dwg-dgn-dwf-nwc-ifc-and-images-with-dirootsmep/).</sub>
+Click Add Rule to define custom rules for insulation application.
 
-### Search
+![DiRootsMEP Add Insulation Tool - Add Rule](../../assets\images\GIFs\InsulationTools\AddInsulation\DMEP_Insulation-Tools-Add-Insulation-Add-Rule.gif)  
+<sub>Note: the version on the image may not reflect the [latest version of DiRootsMEP](https://diroots.com/revit-plugins/dirootsmep/).</sub>
 
-The search box will search for text contained in any of the existing columns (including the customizable column).  
+### Preferences
+
+Set preferences those needed to be included in the rule like Size range, System type, Worksets and Custom parameters, from the preferences list. In Custom parameters you can select a predefined or custom parameters from the dropdown menu.
+
+
+![DiRootsMEP Add Insulation Tool - Add Rules - Preferences](../../assets\images\GIFs\InsulationTools\AddInsulation\DMEP_Insulation-Tools-Add-Insulation-Add-Rule-Preferences.gif)  
+<sub>Note: the version on the image may not reflect the [latest version of DiRootsMEP](https://diroots.com/revit-plugins/dirootsmep/).</sub>
+
+### Auto Update
+
+Enable Auto Update if you want insulation to be automatically applied to newly created pipes or ducts that match the defined rules.
+
+![DiRootsMEP Add Insulation Tool - Auto Update](../../assets\images\GIFs\InsulationTools\AddInsulation\DMEP_Insulation-Tools-Add-Insulation-Auto-update.gif)  
+<sub>Note: the version on the image may not reflect the [latest version of DiRootsMEP](https://diroots.com/revit-plugins/dirootsmep/).</sub>
+
+### Save and Apply
+
+Once all rules are configured, click Save and Apply to implement them across the Sope you have selected(Whole Model, Active View and Current selection).
+
+![DiRootsMEP Add Insulation Tool - Save and Apply](../../assets\images\GIFs\InsulationTools\AddInsulation\DMEP_Insulation-Tools-Add-Insulation-Save-and-Apply.gif)  
+<sub>Note: the version on the image may not reflect the [latest version of DiRootsMEP](https://diroots.com/revit-plugins/dirootsmep/).</sub>
+
+### Expor/Import
+
+Export: Save your insulation rules as a .json file for future reuse or sharing.
+
+![DiRootsMEP Add Insulation Tool - Export](../../assets\images\GIFs\InsulationTools\AddInsulation\DMEP_Insulation-Tools-Add-Insulation-Export.gif)  
+<sub>Note: the version on the image may not reflect the [latest version of DiRootsMEP](https://diroots.com/revit-plugins/dirootsmep/).</sub>
+
+Import: Load an existing .json file to quickly apply previously defined rules.
+
+![DiRootsMEP Add Insulation Tool - Import](../../assets\images\GIFs\InsulationTools\AddInsulation\DMEP_Insulation-Tools-Add-Insulation-Import.gif)  
+<sub>Note: the version on the image may not reflect the [latest version of DiRootsMEP](https://diroots.com/revit-plugins/dirootsmep/).</sub>
   
 ---
 
-For example, you can find Sheets by:
-- Sheet Number
-- Sheet Name
-- Revision
-- Size (e.g., A1, A0, etc.)
-- Any instance parameter available in the customizable column
-- Custom filename
+## Hide Insulation
 
----
+Use this feature to temporarily hide insulation for selected pipes or ducts in the model. Simply select the elements and click Hide Insulation — the insulation will be visually hidden without removing it.
 
-For example, you can find Views by:
-- View Name
-- Scale
-- Detail Level
-- Discipline
-- Custom filename
-
-![DiRootsMEP Searching for Revit Sheets and Views](../../assets\images\GIFs\Selection\PS-Search.gif)  
-<sub>Note: the version on the image may not reflect the [latest version of DiRootsMEP](https://diroots.com/revit-plugins/revit-to-pdf-dwg-dgn-dwf-nwc-ifc-and-images-with-dirootsmep/).</sub>
-
----
-
-## Custom File Name
-
-The custom file name builder allows you to quickly set how you want your files to be named.
-
-Main features:
-- Parametric filenaming (using Sheet/View and Project Information parameters)
-- Set custom fields Separators (e.g., SheetName-ShetNumber_Rev1)
-- Custom Prefix and SUffix
-- Other non-Revit parameters (e.g., Current Month, Day, Hour, etc.)
-- Custom Name Preview
-
-![DiRootsMEP building a custom filename with Revit parameters and custom parameters](../../assets\images\PS-CustomFileNameSelection.gif)  
-<sub>Note: the version on the image may not reflect the [latest version of DiRootsMEP](https://diroots.com/revit-plugins/revit-to-pdf-dwg-dgn-dwf-nwc-ifc-and-images-with-dirootsmep/).</sub>
-
----
-
-## Clear selection
-
-Quickly clear the current selection.
-
----
-
-## Advanced Settings
-
-Set some advanced settings as defaults for your prints, using the radio button to set the desired setting.
-
-1. Temporary Hide/Isolate
-
-- Turn off the temporary Hide/Isolate mode before printing
-- Leave the temporary Hide/Isolate mode and print
-
-2. Worksharing Display
-
-- Turn off the Worksharing Display mode before printing
-- Leave the Worksharing Display mode on and print
-
-3. Reveal Hidden elements
-
-- Turn off the Reveal Hidden Elements mode before printing
-- Leave the Reveal Hidden Elements mode on and print
-
-4. Reveal Constraints
-
-- Turn off the Reveal Constraints mode before printing
-- Leave the Reveal Constrains mode on and print
-
-![DiRootsMEP Advanced Settings](../../assets\images\GIFs\Selection\PS-AdvancedSettings.gif)  
-<sub>Note: the version on the image may not reflect the [latest version of DiRootsMEP](https://diroots.com/revit-plugins/revit-to-pdf-dwg-dgn-dwf-nwc-ifc-and-images-with-dirootsmep/).</sub>
-
----
-
-Let's move on to the next step. After selecting the sheets/views you want, click on "Next" to go to the print format settings.
+![DiRootsMEP Hide Insulation](../../assets\images\GIFs\InsulationTools\HideInsulation\DMEP_Insulation-Tools-Hide-Insulation.gif)  
+<sub>Note: the version on the image may not reflect the [latest version of DiRootsMEP](https://diroots.com/revit-plugins/dirootsmep/).</sub>
