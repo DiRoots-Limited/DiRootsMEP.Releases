@@ -1,4 +1,4 @@
-ProSheets is a plugin for Autodesk Revit Add-in to batch export Views and Sheets to PDF, DWG, DGN, DWF, NWC, IFC, and Images (JPEG, PNG, TIFF, etc).
+DiRootsMEP is a plugin for Autodesk Revit Add-in to batch export Views and Sheets to PDF, DWG, DGN, DWF, NWC, IFC, and Images (JPEG, PNG, TIFF, etc).
 
 ### Main features
 - Export to Revit to PDF, DWG, DGN, DWF, NWC, IFC, and Images.
@@ -22,11 +22,11 @@ ProSheets is a plugin for Autodesk Revit Add-in to batch export Views and Sheets
 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, and 2026.
 
 ### Useful links
-[User Guide](https://docs.prosheets.diroots.com/)
-[Provide Feedback](https://diroots.com/contact-us/?utm_source=DiRootsAppManager&utm_medium=App-Description&utm_campaign=ProSheets)
-[Custom Software Development](https://diroots.com/custom-software-development/?utm_source=DiRootsAppManager&utm_medium=App-Description&utm_campaign=ProSheets)
+[User Guide](https://docs.dirootsmep.diroots.com/)
+[Provide Feedback](https://diroots.com/contact-us/?utm_source=DiRootsAppManager&utm_medium=App-Description&utm_campaign=DiRootsMEP)
+[Custom Software Development](https://diroots.com/custom-software-development/?utm_source=DiRootsAppManager&utm_medium=App-Description&utm_campaign=DiRootsMEP)
 
-[DiRoots, LDA.](https://diroots.com/?utm_source=DiRootsAppManager&utm_medium=App-Description&utm_campaign=ProSheets) 
+[DiRoots, LDA.](https://diroots.com/?utm_source=DiRootsAppManager&utm_medium=App-Description&utm_campaign=DiRootsMEP) 
 
 🇵🇹 Portugal Office:
 R. da Marcha Gualtariana, 628
