@@ -19,18 +19,18 @@ nav_order: 2
 
 ## Download
 
-Download the [latest version of DiRootsMEP](https://diroots.com/revit-plugins/revit-to-pdf-dwg-dgn-dwf-nwc-ifc-and-images-with-dirootsmep/).
+Download the [latest version of DiRootsMEP](https://diroots.com/revit-plugins/dirootsmep/).
 
 
 ## Install
 
 ### Compatibility
 - Windows 7, 8, 10 and 11.
-- Revit 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026.
+- Revit 2020, 2021, 2022, 2023, 2024, 2025, 2026.
 
 ### Prerequisites
 - Admin permissions.
-- PDF24 (the compatible version will be automatically installed. Dont't do it manually).
+
 
 ```yaml
 # Remarks
@@ -48,11 +48,11 @@ This method is ideal for individuals with admin permissions who want to install 
 
 2. Select the Revit versions and click 'Install'.
 
-![DiRootsMEP Installation First Step](../assets\images\PS-Install.gif)
+![DiRootsMEP Installation First Step](../assets\images\DMEP-Install.gif)
 
 3 . Wait for the installation to complete and click 'Finish'.
 
-![DiRootsMEP Installation Finish](../assets\images\PS-Complete.png)
+![DiRootsMEP Installation Finish](../assets\images\DMEP-Complete.png)
 
 4. Restart your computer. Don't Skip this step.
 
@@ -72,24 +72,18 @@ This method is ideal for IT administrators who want to deploy DiRootsMEP to mult
 - Disable automatic check for update (i.e., users won't be prompt to install updates).
 
 ```yaml
-# In this example DiRootsOne will NOT be installed for Revit 2017, 2018, and 2019.
+# In this example, DiRootsMEP will be installed silently with the automatic update feature turned off.
 <installer-name>.exe /i // /qn accept_eula=1 UPDATER="FALSE"
 ```
 
 - Exclude specific Revit versions.
 
 ```yaml
-# In this example DiRootsMEP will NOT be installed for Revit 2017, 2018, and 2019.
-<installer-name>.exe /i // /qn accept_eula=1 revit2017="" revit2018="" revit2019=""
+# In this example DiRootsMEP will NOT be installed for Revit 2020, 2021, and 2022.
+<installer-name>.exe /i // /qn accept_eula=1 revit2020"" revit2021="" revit2022=""
 ```
 
-- Skip PDF24 install. 
-Warning: You will only be able to export to PDF using the native Revit PDF exporter, which is available only in Revit 2022 or newer and requires a [DiRootsMEP Premium license](https://diroots.com/revit-plugins/quote-request/).
 
-```yaml
-# In this example DiRootsMEP will be installed without PDF24
-<installer-name>.exe /i // /qn accept_eula=1 INSTALL_PDF24=""
-```
 
 ## Uninstall
 
@@ -99,13 +93,11 @@ Warning: You will only be able to export to PDF using the native Revit PDF expor
 
 2. Select and click 'Remove'.
 
-![DiRootsMEP Uninstall](../assets\images\PS-Remove.gif)
+![DiRootsMEP Uninstall](../assets\images\DMEP-Remove.gif)
 
 3 . Wait for the uninstallation to complete and click 'Finish'.
 
-```yaml
-# Remarks.
-PDF24 shipped with DiRootsMEP won't be uninstalled. If you want to remove it, uninstall it manually.
+
 ```
 
 ### Using the installer silently
